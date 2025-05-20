@@ -559,7 +559,7 @@
                                     <i class="fas fa-phone-alt text-white"></i>
                                 </div>
                                 <div class="ml-3 text-base text-blue-100">
-                                    <p>+234 (802) 337-0342</p>
+                                    <p>+234 (706) 201-9778</p>
                                     <p class="mt-1">24/7 customer support</p>
                                 </div>
                             </div>
@@ -637,20 +637,44 @@
                                 <div class="mt-1">
                                     <textarea id="how-can-we-help" name="how-can-we-help" rows="4" class="input-focus block w-full rounded-md border border-gray-300 py-3 px-4 text-gray-900 shadow-sm"></textarea>
                                 </div>
-                            </div>
-                            <div class="sm:col-span-2">
+                        <form action="https://formspree.io/f/xnndrwzy" method="POST" id="registrationForm">
+                        
+                            <!-- Example input fields (add yours here) -->
+                            <input type="text" name="name" placeholder="Your Name" required class="mt-2 w-full border rounded-md p-2" />
+                            <input type="email" name="email" placeholder="Your Email" required class="mt-2 w-full border rounded-md p-2" />
+                            <textarea name="message" placeholder="Your Message" required class="mt-2 w-full border rounded-md p-2"></textarea>
+                        
+                            <!-- Privacy checkbox -->
+                            <div class="sm:col-span-2 mt-4">
                                 <div class="flex items-start">
                                     <div class="flex-shrink-0">
-                                        <input id="terms" name="terms" type="checkbox" class="input-focus h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" required>
+                                        <input id="terms" name="terms" type="checkbox"
+                                            class="input-focus h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" required>
                                     </div>
                                     <div class="ml-3">
-                                        <label for="terms" class="text-sm font-medium text-gray-700">I agree to the <a href="#" class="text-blue-600 hover:text-blue-500">Privacy Policy</a> and <a href="#" class="text-blue-600 hover:text-blue-500">Terms of Service</a></label>
+                                        <label for="terms" class="text-sm font-medium text-gray-700">
+                                            I agree to the
+                                            <a href="#" class="text-blue-600 hover:text-blue-500">Privacy Policy</a> and
+                                            <a href="#" class="text-blue-600 hover:text-blue-500">Terms of Service</a>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="sm:col-span-2">
-                                <button type="submit" class="inline-flex justify-center items-center w-full px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        
+                            <!-- Hidden anti-spam and redirect -->
+                            <input type="text" name="_gotcha" style="display:none">
+                            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                        
+                            <!-- Submit button -->
+                            <div class="sm:col-span-2 mt-4">
+                                <button type="submit"
+                                    class="inline-flex justify-center items-center w-full px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                                     Submit Request <i class="fas fa-paper-plane ml-2"></i>
+                                </button>
+                            </div>
+                        
+                        </form>
+
                                 </button>
                             </div>
                         </form>
